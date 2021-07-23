@@ -287,11 +287,9 @@ namespace Server
                     {
                         Console.WriteLine("Something went worng");
                     }
+                    //byte[] message = Encoding.ASCII.GetBytes("Test Server");
+                    Console.WriteLine("Text received -> {0} ", data);
                 }
-                Console.WriteLine("Text received -> {0} ", data);
-                byte[] message = Encoding.ASCII.GetBytes("Test Server");
-
-            
 
             clientSocket.Shutdown(SocketShutdown.Both);
             clientSocket.Close();
